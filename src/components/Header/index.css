@@ -1,0 +1,5 @@
+.header {
+  font-size: calc(15px + 3vmin);
+  color: var(--main-color);
+  font-weight: 500;
+}
