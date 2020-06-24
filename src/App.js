@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Header, Upload, Preview, Footer } from './components';
+import { Store } from './store';
 import './App.css';
-import { Header, UploadGIF, Footer } from './components';
 
 function App() {
+  const {
+    state: { list }
+  } = useContext(Store);
   return (
     <div className="App">
       <Header />
-      <UploadGIF />
+      {list.length > 0 && <Preview list={list} />}
+      {list.length === 0 && <Upload />}
       <Footer />
     </div>
   );
