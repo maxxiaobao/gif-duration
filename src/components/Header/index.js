@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 
 export default () => {
-  return <header className="header">How to get the gif duration?</header>;
+  return <header className="header">GIF duration?</header>;
 };

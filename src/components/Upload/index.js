@@ -3,7 +3,7 @@ import { useDropzone } from 'react-dropzone';
 import gifyParse from 'gify-parse';
 import { FileReaderSync } from '../../utils';
 import { Store, UPDATE_LIST } from '../../store';
-import './index.css';
+import './index.scss';
 
 export default () => {
   const { dispatch } = useContext(Store);
@@ -34,12 +34,14 @@ export default () => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <div {...getRootProps()}>
+    <div className="dropBox" {...getRootProps()}>
       <input {...getInputProps()} />
       {isDragActive ? (
-        <p>Drop the files here ...</p>
+        <p className="tip">Drop the files here ...</p>
       ) : (
-        <p>Drag 'n' drop some files here, or click to select files</p>
+        <p className="tip">
+          Drag 'n' drop some files here, or click to select files
+        </p>
       )}
     </div>
   );
