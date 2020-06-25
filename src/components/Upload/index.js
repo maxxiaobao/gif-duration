@@ -35,12 +35,14 @@ export default () => {
 
   return (
     <div className="dropBox" {...getRootProps()}>
-      <input {...getInputProps()} />
+      <input {...getInputProps()} accept="image/gif" />
       {isDragActive ? (
         <p className="tip">Drop the files here ...</p>
       ) : (
         <p className="tip">
           Drag 'n' drop some files here, or click to select files
+          <br />
+          拖放文件到此处或者点击上传
         </p>
       )}
     </div>

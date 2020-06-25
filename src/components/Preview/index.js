@@ -8,9 +8,11 @@ export default ({ list }) => {
         return (
           <div className="item" key={gif.name}>
             <img src={gif.src} alt={gif.name} />
-            <div>Width: {gif.width}</div>
-            <div>Height: {gif.height}</div>
-            <div>Duration: {gif.duration}</div>
+            <div className="item-info">
+              <div>Width: {gif.width}</div>
+              <div>Height: {gif.height}</div>
+              <div>Duration: {gif.duration} ms</div>
+            </div>
           </div>
         );
       })}
