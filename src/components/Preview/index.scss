@@ -10,6 +10,7 @@
     text-align: left;
     font-size: 18px;
     font-weight: bold;
+    color: var(--primary-color);
 
     div {
       margin-bottom: 12px;
@@ -17,7 +18,8 @@
   }
 
   img {
-    background: var(--light-main-color);
+    // background: #ffffff;
+    border: 3px solid var(--primary-color);
     margin-right: 30px;
   }
 }
