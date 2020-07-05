@@ -18,7 +18,7 @@ export default () => {
           src,
           width: info.width,
           height: info.height,
-          duration: info.duration,
+          duration: info.duration / 1000,
           name: file.name
         };
         gifList.push(gifInfo);

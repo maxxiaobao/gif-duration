@@ -19,7 +19,7 @@ export default ({ list }) => {
             <div className="item-info">
               <div>Width: {gif.width}</div>
               <div>Height: {gif.height}</div>
-              <div>Duration: {gif.duration} ms</div>
+              <div>Duration: {gif.duration} s</div>
             </div>
           </div>
         );
