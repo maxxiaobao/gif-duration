@@ -1,4 +1,4 @@
-<img src="https://mary-blog-assets.oss-cn-shanghai.aliyuncs.com/Group%201.png"/>
+> <img src="https://mary-blog-assets.oss-cn-shanghai.aliyuncs.com/Group%201.png"/>
 
 You can get your gif duration here - [gif-duration.top](gif-duration.top) .
 
